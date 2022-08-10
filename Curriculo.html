@@ -12,48 +12,78 @@
 
         <h1> Ana Kelly Nobre Costa </h1>
         <p><img src="anakelly.jpg" width="300" height="300" alt="Ana Kelly"></p>
+
+        <div id='#menu'>
+            <button onclick="trocarAba('contato')">Contato</button>
+            <button onclick="trocarAba('endereco')">Endereço</button>
+            <button onclick="trocarAba('resumo')">Resumo</button>
+            <button onclick="trocarAba('experiencia')">Experiência</button>
+            <button onclick="trocarAba('formacao')">Formação</button>
+        </div>
+
+        <div id='#contato' class='sessao contato'>
+            <h2>Contato</h2>
+    
+            <p>anakelly.ka@gmail.com<br>
+            ana.costa@stoom.com.br<br>
+            +55 84 9 9850-4476<br>
+            <a href="https://www.linkedin.com/in/ana-kelly-17b8371b9/"
+            target="_blank">Curriculo</a></p>
+        </div>
+
+
+        <div id='#endereco' class='sessao endereco'>
+            <h2>Endereço</h2>
+
+            <p>Natal - RN<br>
+            CEP: 59151903</p>
+        </div>
+
+        <div id='#resumo' class='sessao resumo'>
+            <h2>Resumo</h2>
+
+            <ul>    
+            <p><li>Graduanda de Ciencias & Tecnologia.</li><br>
+            Universidade Federal do Rio Grande do Norte, UFRN, Natal, Brasil.</p>  
+                
+            <p><li>Tec. Informática.</li><br>
+            Instituto Federal de Educação, 
+            Ciência e Tecnologia do Rio Grande do Norte, IFRN, Pau dos Ferros, Brasil.</p>
+            </ul>
+        </div>
+
+        <div id='#experiencia' class='sessao experiencia'>
+
+            <h2>Experiência</h2>
+            <ul>
+            <p><li>Stoom - Soluções em E-commerce</li>
+            Estagiária<br>
+            junho de 2022 - Present (3 meses)</p>
+
+            <p><li>Teleperformance</li>
+            Atendente de telemarketing<br>
+            dezembro de 2018 - julho de 2022 (3 anos 8 meses)</p>
+            </ul>
+        </div>
         
-        <h2>Contato</h2>
+        <div id='#formacao' class='sessao formacao'>
+            <h2>Formação Acadêmica</h2>
 
-        <p>anakelly.ka@gmail.com<br>
-        ana.costa@stoom.com.br<br>
-        +55 84 9 9850-4476<br>
-        <a href="https://www.linkedin.com/in/ana-kelly-17b8371b9/"
-        target="_blank">Curriculo</a></p>
-        
+            <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - IFRN Pau dos Ferros</p>
+                Técnico em Informática, Informática · (2014 - 2017)<br>
+                Universidade Federal do Rio Grande do Norte C&T - Ciências e Tecnologia   · (2020)</p>
+        </div>
 
-        <h2>Endereço</h2>
+        <footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script src="script_jquery.js"></script>
 
-        <p>Natal - RN<br>
-        CEP: 59151903</p>
-
-        <h2>Resumo</h2>
-
-        <ul>    
-        <p><li>Graduanda de Ciencias & Tecnologia.</li><br>
-        Universidade Federal do Rio Grande do Norte, UFRN, Natal, Brasil.</p>  
-            
-        <p><li>Tec. Informática.</li><br>
-         Instituto Federal de Educação, 
-         Ciência e Tecnologia do Rio Grande do Norte, IFRN, Pau dos Ferros, Brasil.</p>
-        </ul>
-
-        <h2>Experiência</h2>
-        <ul>
-        <p><li>Stoom - Soluções em E-commerce</li>
-        Estagiária<br>
-        junho de 2022 - Present (3 meses)</p>
-
-        <p><li>Teleperformance</li>
-        Atendente de telemarketing<br>
-        dezembro de 2018 - julho de 2022 (3 anos 8 meses)</p>
-        </ul>
-        
-        <h2>Formação Acadêmica</h2>
-
-        <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - IFRN Pau dos Ferros</p>
-            Técnico em Informática, Informática · (2014 - 2017)<br>
-            Universidade Federal do Rio Grande do Norte C&T - Ciências e Tecnologia   · (2020)</p>
-
+            <script>
+                function trocarAba(sessao){
+                    $('.sessao').hide();
+                    $('.sessao'+'.'+sessao).show();
+                }
+            </script>
+        </footer>
     </body>
 </html>
